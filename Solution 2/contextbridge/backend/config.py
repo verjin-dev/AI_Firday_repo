@@ -110,6 +110,11 @@ RERANK_SECTION_BOOST: float = _float("RERANK_SECTION_BOOST", 0.05)
 # --------------------------------------------------------------------------
 # Summarization
 # --------------------------------------------------------------------------
+# Content budget for a single domain-analysis prompt (fraud / clauses).
+# Lower this when routing to models with small context windows — an oversized
+# prompt is rejected outright rather than truncated.
+DOMAIN_ANALYSIS_CONTENT_TOKENS: int = _int("DOMAIN_ANALYSIS_CONTENT_TOKENS", 12_000)
+
 SUMMARY_CHUNK_BATCH_SIZE: int = _int("SUMMARY_CHUNK_BATCH_SIZE", 5)
 MAX_SUMMARY_LEVELS: int = _int("MAX_SUMMARY_LEVELS", 3)
 SUMMARY_CONCURRENCY: int = _int("SUMMARY_CONCURRENCY", 6)

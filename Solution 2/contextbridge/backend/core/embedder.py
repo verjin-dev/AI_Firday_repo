@@ -23,6 +23,7 @@ from backend.utils.logger import logger
 
 _PROBE_ATTEMPTS = 3
 _PROBE_BACKOFF = 1.5
+_EMBED_ATTEMPTS = 4  # the router returns transient 502/503 under load
 
 
 class EmbeddingError(RuntimeError):
@@ -110,19 +111,37 @@ class EmbeddingEngine:
 
     # ------------------------------------------------------------------
     def embed_texts(self, texts: list[str]) -> list[list[float]]:
-        """Batch-embed and L2-normalise. Retries once, then falls back to hashing."""
+        """Batch-embed and L2-normalise, retrying transient failures.
+
+        For the remote backend a persistent failure raises rather than silently
+        substituting hash vectors: those have the same width, so ChromaDB would
+        accept them and retrieval would degrade invisibly. Failing loudly lets
+        the pipeline report a partial ingest instead.
+        """
         if not texts:
             return []
 
-        try:
-            return self._embed(texts)
-        except Exception as exc:
-            logger.warning(f"Embedding failed ({exc}); retrying once")
+        last_error: Exception | None = None
+        for attempt in range(1, _EMBED_ATTEMPTS + 1):
             try:
                 return self._embed(texts)
-            except Exception as exc2:
-                logger.error(f"Embedding failed twice ({exc2}); using hash fallback")
-                return [self._hash_embed(t) for t in texts]
+            except Exception as exc:
+                last_error = exc
+                if attempt < _EMBED_ATTEMPTS:
+                    logger.warning(
+                        f"Embedding failed (attempt {attempt}/{_EMBED_ATTEMPTS}): {exc}"
+                    )
+                    time.sleep(_PROBE_BACKOFF * attempt)
+
+        if self.backend == "remote":
+            raise EmbeddingError(
+                f"Remote embeddings failed after {_EMBED_ATTEMPTS} attempts: "
+                f"{last_error}. Refusing to write hash-substituted vectors into a "
+                "collection built from real embeddings."
+            )
+
+        logger.error(f"Embedding failed ({last_error}); using hash fallback")
+        return [self._hash_embed(t) for t in texts]
 
     def embed_query(self, query: str) -> list[float]:
         """Single-query embedding, same normalisation as the corpus."""

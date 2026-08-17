@@ -266,7 +266,7 @@ class BankingExtractor:
         self,
         doc_id: str,
         summary: SummaryResult | None = None,
-        max_content_tokens: int = 30_000,
+        max_content_tokens: int | None = None,
     ) -> FraudAnalysisResult:
         """Analyse the hierarchical summary plus targeted retrieval for red flags.
 
@@ -274,6 +274,7 @@ class BankingExtractor:
         is exactly what a summary can flatten, so we pull the highest-signal raw
         chunks alongside the summary rather than trusting compression alone.
         """
+        max_content_tokens = max_content_tokens or config.DOMAIN_ANALYSIS_CONTENT_TOKENS
         warnings: list[str] = []
         if not self.client.available:
             return FraudAnalysisResult(
@@ -339,8 +340,9 @@ class BankingExtractor:
 
     # ------------------------------------------------------------------
     async def extract_contract_clauses(
-        self, doc_id: str, max_content_tokens: int = 30_000
+        self, doc_id: str, max_content_tokens: int | None = None
     ) -> ContractClauseResult:
+        max_content_tokens = max_content_tokens or config.DOMAIN_ANALYSIS_CONTENT_TOKENS
         if not self.client.available:
             return ContractClauseResult(
                 doc_id=doc_id,
