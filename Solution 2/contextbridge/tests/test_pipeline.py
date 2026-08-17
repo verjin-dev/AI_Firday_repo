@@ -218,3 +218,42 @@ def test_truncation_risk_detects_cross_reference():
     chunk = make_chunk(1, "The obligations are as described in section 12 above.")
     risks = checker.detect_truncation_risks([chunk], total_chunks=10)
     assert any("section 12" in r for r in risks)
+
+
+def test_denial_despite_strong_context_is_flagged_low():
+    """A confident 'nothing found' while strong context was supplied is a
+    grounding failure — it must not be reported as HIGH confidence."""
+    checker = CompletenessChecker()
+    strong = [
+        make_result(
+            make_chunk(31, "Prior claim CLM-2024-778341 ...", section="Prior Claims"),
+            score=0.73,
+        )
+    ]
+    report = checker.check_response_completeness(
+        "Has this claimant filed any similar claims before?",
+        "There is no evidence in this file of any prior claims.",
+        [],
+        strong,
+    )
+    assert report.confidence == "LOW"
+    assert "overlooked" in report.message
+    assert report.notes
+
+
+def test_weak_context_denial_is_medium_not_low():
+    checker = CompletenessChecker()
+    weak = [make_result(make_chunk(2, "unrelated filler"), score=0.20)]
+    report = checker.check_response_completeness(
+        "q", "No information available in the file.", [], weak
+    )
+    assert report.confidence == "MEDIUM"
+
+
+def test_normal_answer_with_strong_context_stays_high():
+    checker = CompletenessChecker()
+    strong = [make_result(make_chunk(31, "Prior claim CLM-2024-778341"), score=0.73)]
+    report = checker.check_response_completeness(
+        "q", "Yes — prior claim CLM-2024-778341 was filed in 2024.", [], strong
+    )
+    assert report.confidence == "HIGH"

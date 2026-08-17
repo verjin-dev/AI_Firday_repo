@@ -22,14 +22,35 @@ _CROSS_REF_RE = re.compile(
     re.IGNORECASE,
 )
 
+# A retrieval score at or above this means the passage is a confident match.
+_STRONG_MATCH_SCORE = 0.55
+
 _MID_SENTENCE_START = re.compile(r"^[a-z,;)\]]")
 _MID_SENTENCE_END = re.compile(r"[A-Za-z0-9,;:\-]$")
 
+# Phrases where the model asserts the document does *not* contain something.
+# Broad on purpose: when high-scoring context was supplied and the answer still
+# claims absence, either retrieval put the wrong passage in front of the model or
+# the model ignored what it was given. Both warrant a confidence downgrade.
 _NOT_FOUND_MARKERS = (
     "not found in provided context",
     "i don't have enough information",
     "cannot find",
     "no information",
+    "no evidence",
+    "does not contain",
+    "do not contain",
+    "does not include",
+    "no reference",
+    "no mention",
+    "no record",
+    "no documented",
+    "not documented",
+    "no prior claims",
+    "there is no",
+    "appears to be the first",
+    "unable to locate",
+    "is not present",
 )
 
 
@@ -50,11 +71,28 @@ class CompletenessChecker:
             confidence = "HIGH"
             message = "All retrieved sections fit within the context budget."
             if _looks_unanswered(response):
-                confidence = "MEDIUM"
-                message = (
-                    "Nothing was dropped from context, but the answer did not find "
-                    "the information — try rephrasing or widening the search."
-                )
+                best = max((r.score for r in included_chunks), default=0.0)
+                if best >= _STRONG_MATCH_SCORE:
+                    # Strong context was supplied and the model still said "no".
+                    # That is a grounding failure, not a retrieval gap — flag it
+                    # rather than presenting a confident denial.
+                    confidence = "LOW"
+                    message = (
+                        "The answer reports finding nothing, but a strongly matching "
+                        f"section was in context (relevance {best:.2f}). The model may "
+                        "have overlooked it — check the cited sources below before "
+                        "trusting this answer."
+                    )
+                    notes.append(
+                        "Highest-scoring section supplied: "
+                        + _describe(max(included_chunks, key=lambda r: r.score))
+                    )
+                else:
+                    confidence = "MEDIUM"
+                    message = (
+                        "Nothing was dropped from context, but the answer did not "
+                        "find the information — try rephrasing or widening the search."
+                    )
             if not included_chunks:
                 confidence = "LOW"
                 message = (
