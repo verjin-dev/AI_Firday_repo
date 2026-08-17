@@ -1,0 +1,725 @@
+
+
+--- PAGE 1 ---
+
+MASTER SOFTWARE LICENCE AND SERVICES AGREEMENT
+
+Contract Reference: CTR-2026-0417
+Effective Date: 1 April 2026
+Supplier: Aetherline Systems International Ltd
+Customer: Halberd Logistics Group
+Initial Term: 36 months
+Annual Contract Value: $1,840,000
+
+SECTION 1. PARTIES AND RECITALS
+
+1.2 Except as expressly provided in this clause 1, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+1.7 Any notice required to be given under this clause 1 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+1.5 Any failure or delay by either party in exercising any right under this clause 1 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+1.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 1 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+1.9 If any provision or part-provision of this clause 1 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+
+
+--- PAGE 2 ---
+
+SECTION 2. DEFINITIONS
+
+2.3 Where any obligation under this clause 2 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+2.5 Any failure or delay by either party in exercising any right under this clause 2 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+2.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 2, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+2.8 The obligations set out in this clause 2 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+2.7 Any notice required to be given under this clause 2 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+2.2 Except as expressly provided in this clause 2, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+2.6 The Customer shall provide such cooperation, information and access as the Supplier may reasonably require in order to perform its obligations under this clause 2, and the Supplier shall not be liable for any failure to perform to the extent caused by the Customer's failure to do so.
+
+2.9 If any provision or part-provision of this clause 2 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+
+
+--- PAGE 3 ---
+
+SECTION 3. INTERPRETATION
+
+3.2 Except as expressly provided in this clause 3, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+3.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 3, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+3.7 Any notice required to be given under this clause 3 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+3.11 Nothing in this clause 3 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+3.6 The Customer shall provide such cooperation, information and access as the Supplier may reasonably require in order to perform its obligations under this clause 3, and the Supplier shall not be liable for any failure to perform to the extent caused by the Customer's failure to do so.
+
+3.8 The obligations set out in this clause 3 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+3.1 The parties acknowledge that the provisions of this clause 3 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+3.5 Any failure or delay by either party in exercising any right under this clause 3 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+
+
+--- PAGE 4 ---
+
+SECTION 4. GRANT OF LICENCE
+
+4.11 Nothing in this clause 4 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+4.6 The Customer shall provide such cooperation, information and access as the Supplier may reasonably require in order to perform its obligations under this clause 4, and the Supplier shall not be liable for any failure to perform to the extent caused by the Customer's failure to do so.
+
+4.7 Any notice required to be given under this clause 4 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+4.8 The obligations set out in this clause 4 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+4.3 Where any obligation under this clause 4 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+4.9 If any provision or part-provision of this clause 4 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+4.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 4, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+4.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 4 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+
+
+--- PAGE 5 ---
+
+SECTION 5. SCOPE OF PERMITTED USE
+
+5.1 The parties acknowledge that the provisions of this clause 5 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+5.9 If any provision or part-provision of this clause 5 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+5.7 Any notice required to be given under this clause 5 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+5.5 Any failure or delay by either party in exercising any right under this clause 5 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+5.2 Except as expressly provided in this clause 5, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+
+
+--- PAGE 6 ---
+
+SECTION 6. RESTRICTIONS ON USE
+
+6.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 6, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+6.7 Any notice required to be given under this clause 6 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+6.3 Where any obligation under this clause 6 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+6.5 Any failure or delay by either party in exercising any right under this clause 6 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+6.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 6 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+6.2 Except as expressly provided in this clause 6, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+6.8 The obligations set out in this clause 6 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+6.1 The parties acknowledge that the provisions of this clause 6 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+
+
+--- PAGE 7 ---
+
+SECTION 7. DELIVERY AND ACCEPTANCE
+
+7.2 Except as expressly provided in this clause 7, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+7.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 7 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+7.11 Nothing in this clause 7 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+7.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 7, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+7.5 Any failure or delay by either party in exercising any right under this clause 7 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+
+
+--- PAGE 8 ---
+
+SECTION 8. IMPLEMENTATION SERVICES
+
+8.9 If any provision or part-provision of this clause 8 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+8.11 Nothing in this clause 8 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+8.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 8 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+8.7 Any notice required to be given under this clause 8 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+8.8 The obligations set out in this clause 8 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+8.5 Any failure or delay by either party in exercising any right under this clause 8 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+
+
+--- PAGE 9 ---
+
+SECTION 9. CONFIGURATION AND CUSTOMISATION
+
+9.6 The Customer shall provide such cooperation, information and access as the Supplier may reasonably require in order to perform its obligations under this clause 9, and the Supplier shall not be liable for any failure to perform to the extent caused by the Customer's failure to do so.
+
+9.9 If any provision or part-provision of this clause 9 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+9.3 Where any obligation under this clause 9 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+9.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 9, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+9.2 Except as expressly provided in this clause 9, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+9.8 The obligations set out in this clause 9 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+9.11 Nothing in this clause 9 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+
+
+--- PAGE 10 ---
+
+SECTION 10. TRAINING
+
+10.1 The parties acknowledge that the provisions of this clause 10 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+10.3 Where any obligation under this clause 10 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+10.8 The obligations set out in this clause 10 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+10.7 Any notice required to be given under this clause 10 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+10.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 10, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+10.5 Any failure or delay by either party in exercising any right under this clause 10 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+
+
+--- PAGE 11 ---
+
+SECTION 11. SUPPORT AND MAINTENANCE
+
+11.11 Nothing in this clause 11 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+11.6 The Customer shall provide such cooperation, information and access as the Supplier may reasonably require in order to perform its obligations under this clause 11, and the Supplier shall not be liable for any failure to perform to the extent caused by the Customer's failure to do so.
+
+11.3 Where any obligation under this clause 11 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+11.2 Except as expressly provided in this clause 11, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+11.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 11, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+11.5 Any failure or delay by either party in exercising any right under this clause 11 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+11.8 The obligations set out in this clause 11 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+
+
+--- PAGE 12 ---
+
+SECTION 12. SERVICE LEVELS
+
+12.1 The parties acknowledge that the provisions of this clause 12 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+12.2 Except as expressly provided in this clause 12, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+12.11 Nothing in this clause 12 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+12.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 12, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+12.8 The obligations set out in this clause 12 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+12.7 Any notice required to be given under this clause 12 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+
+
+--- PAGE 13 ---
+
+SECTION 13. SERVICE CREDITS
+
+13.11 Nothing in this clause 13 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+13.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 13, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+13.1 The parties acknowledge that the provisions of this clause 13 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+13.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 13 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+13.2 Except as expressly provided in this clause 13, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+13.6 The Customer shall provide such cooperation, information and access as the Supplier may reasonably require in order to perform its obligations under this clause 13, and the Supplier shall not be liable for any failure to perform to the extent caused by the Customer's failure to do so.
+
+13.7 Any notice required to be given under this clause 13 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+13.5 Any failure or delay by either party in exercising any right under this clause 13 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+
+
+--- PAGE 14 ---
+
+SECTION 14. FEES AND CHARGES
+
+14.8 The obligations set out in this clause 14 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+14.11 Nothing in this clause 14 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+14.5 Any failure or delay by either party in exercising any right under this clause 14 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+14.9 If any provision or part-provision of this clause 14 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+14.2 Except as expressly provided in this clause 14, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+14.1 The parties acknowledge that the provisions of this clause 14 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+14.3 Where any obligation under this clause 14 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+
+
+--- PAGE 15 ---
+
+SECTION 15. INVOICING
+
+15.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 15, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+15.8 The obligations set out in this clause 15 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+15.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 15 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+15.3 Where any obligation under this clause 15 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+15.2 Except as expressly provided in this clause 15, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+15.9 If any provision or part-provision of this clause 15 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+
+
+--- PAGE 16 ---
+
+SECTION 16. PAYMENT TERMS
+
+16.11 Nothing in this clause 16 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+16.9 If any provision or part-provision of this clause 16 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+16.1 The parties acknowledge that the provisions of this clause 16 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+16.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 16, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+16.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 16 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+
+
+--- PAGE 17 ---
+
+SECTION 17. TAXES
+
+17.2 Except as expressly provided in this clause 17, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+17.6 The Customer shall provide such cooperation, information and access as the Supplier may reasonably require in order to perform its obligations under this clause 17, and the Supplier shall not be liable for any failure to perform to the extent caused by the Customer's failure to do so.
+
+17.3 Where any obligation under this clause 17 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+17.11 Nothing in this clause 17 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+17.7 Any notice required to be given under this clause 17 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+
+
+--- PAGE 18 ---
+
+SECTION 18. PRICE ADJUSTMENT
+
+18.3 Where any obligation under this clause 18 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+18.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 18 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+18.6 The Customer shall provide such cooperation, information and access as the Supplier may reasonably require in order to perform its obligations under this clause 18, and the Supplier shall not be liable for any failure to perform to the extent caused by the Customer's failure to do so.
+
+18.8 The obligations set out in this clause 18 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+18.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 18, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+18.1 The parties acknowledge that the provisions of this clause 18 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+18.11 Nothing in this clause 18 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+18.9 If any provision or part-provision of this clause 18 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+
+
+--- PAGE 19 ---
+
+SECTION 19. AUDIT RIGHTS
+
+19.1 The parties acknowledge that the provisions of this clause 19 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+19.7 Any notice required to be given under this clause 19 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+19.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 19, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+19.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 19 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+19.11 Nothing in this clause 19 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+19.8 The obligations set out in this clause 19 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+19.5 Any failure or delay by either party in exercising any right under this clause 19 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+
+
+--- PAGE 20 ---
+
+SECTION 20. DATA PROTECTION
+
+20.5 Any failure or delay by either party in exercising any right under this clause 20 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+20.3 Where any obligation under this clause 20 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+20.8 The obligations set out in this clause 20 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+20.7 Any notice required to be given under this clause 20 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+20.2 Except as expressly provided in this clause 20, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+20.1 The parties acknowledge that the provisions of this clause 20 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+
+
+--- PAGE 21 ---
+
+SECTION 21. SECURITY STANDARDS
+
+21.3 Where any obligation under this clause 21 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+21.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 21 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+21.9 If any provision or part-provision of this clause 21 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+21.2 Except as expressly provided in this clause 21, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+21.1 The parties acknowledge that the provisions of this clause 21 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+
+
+--- PAGE 22 ---
+
+SECTION 22. BUSINESS CONTINUITY
+
+22.9 If any provision or part-provision of this clause 22 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+22.8 The obligations set out in this clause 22 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+22.3 Where any obligation under this clause 22 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+22.5 Any failure or delay by either party in exercising any right under this clause 22 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+22.1 The parties acknowledge that the provisions of this clause 22 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+22.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 22, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+22.6 The Customer shall provide such cooperation, information and access as the Supplier may reasonably require in order to perform its obligations under this clause 22, and the Supplier shall not be liable for any failure to perform to the extent caused by the Customer's failure to do so.
+
+22.7 Any notice required to be given under this clause 22 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+
+
+--- PAGE 23 ---
+
+SECTION 23. CONFIDENTIALITY
+
+23.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 23, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+23.8 The obligations set out in this clause 23 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+23.6 The Customer shall provide such cooperation, information and access as the Supplier may reasonably require in order to perform its obligations under this clause 23, and the Supplier shall not be liable for any failure to perform to the extent caused by the Customer's failure to do so.
+
+23.5 Any failure or delay by either party in exercising any right under this clause 23 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+23.1 The parties acknowledge that the provisions of this clause 23 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+23.11 Nothing in this clause 23 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+23.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 23 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+
+
+--- PAGE 24 ---
+
+SECTION 24. INTELLECTUAL PROPERTY OWNERSHIP
+
+24.7 Any notice required to be given under this clause 24 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+24.1 The parties acknowledge that the provisions of this clause 24 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+24.8 The obligations set out in this clause 24 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+24.9 If any provision or part-provision of this clause 24 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+24.2 Except as expressly provided in this clause 24, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+24.5 Any failure or delay by either party in exercising any right under this clause 24 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+24.6 The Customer shall provide such cooperation, information and access as the Supplier may reasonably require in order to perform its obligations under this clause 24, and the Supplier shall not be liable for any failure to perform to the extent caused by the Customer's failure to do so.
+
+
+
+--- PAGE 25 ---
+
+SECTION 25. FEEDBACK AND IMPROVEMENTS
+
+25.3 Where any obligation under this clause 25 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+25.1 The parties acknowledge that the provisions of this clause 25 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+25.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 25 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+25.5 Any failure or delay by either party in exercising any right under this clause 25 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+25.8 The obligations set out in this clause 25 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+25.7 Any notice required to be given under this clause 25 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+25.2 Except as expressly provided in this clause 25, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+25.11 Nothing in this clause 25 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+
+
+--- PAGE 26 ---
+
+SECTION 26. THIRD PARTY COMPONENTS
+
+26.9 If any provision or part-provision of this clause 26 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+26.8 The obligations set out in this clause 26 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+26.3 Where any obligation under this clause 26 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+26.5 Any failure or delay by either party in exercising any right under this clause 26 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+26.11 Nothing in this clause 26 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+26.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 26, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+26.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 26 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+26.6 The Customer shall provide such cooperation, information and access as the Supplier may reasonably require in order to perform its obligations under this clause 26, and the Supplier shall not be liable for any failure to perform to the extent caused by the Customer's failure to do so.
+
+
+
+--- PAGE 27 ---
+
+SECTION 27. WARRANTIES
+
+27.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 27 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+27.9 If any provision or part-provision of this clause 27 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+27.5 Any failure or delay by either party in exercising any right under this clause 27 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+27.11 Nothing in this clause 27 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+27.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 27, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+27.8 The obligations set out in this clause 27 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+
+
+--- PAGE 28 ---
+
+SECTION 28. DISCLAIMER OF WARRANTIES
+
+28.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 28, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+28.1 The parties acknowledge that the provisions of this clause 28 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+28.9 If any provision or part-provision of this clause 28 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+28.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 28 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+28.2 Except as expressly provided in this clause 28, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+
+
+--- PAGE 29 ---
+
+SECTION 29. LIMITATION OF LIABILITY
+
+29.1 Subject to clause 29.3, each party's aggregate liability arising out of or in connection with this Agreement, whether in contract, tort (including negligence), breach of statutory duty or otherwise, shall be limited to the total Fees paid or payable by the Customer in the twelve (12) month period immediately preceding the event giving rise to the claim.
+
+29.2 Neither party shall be liable for any indirect, special, incidental, punitive or consequential loss, loss of profit, loss of revenue, loss of anticipated savings, loss of goodwill or loss of data, in each case howsoever arising.
+
+29.3 Notwithstanding clause 29.1, the Supplier's liability shall be unlimited and the cap in clause 29.1 shall not apply in respect of: (a) any breach of clause 23 (Confidentiality); (b) any breach of clause 20 (Data Protection); (c) any claim arising from or connected with the Supplier's provision of the Services, including any failure, defect, interruption, degradation or non-conformity of the Software or the Services; and (d) any indemnity given under clause 30.
+
+29.4 The Customer acknowledges that the exclusions and limitations in this clause 29 are reasonable having regard to the Fees and that it has had the opportunity to obtain independent legal advice.
+
+
+
+--- PAGE 30 ---
+
+SECTION 30. INDEMNIFICATION
+
+30.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 30, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+30.11 Nothing in this clause 30 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+30.7 Any notice required to be given under this clause 30 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+30.8 The obligations set out in this clause 30 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+30.6 The Customer shall provide such cooperation, information and access as the Supplier may reasonably require in order to perform its obligations under this clause 30, and the Supplier shall not be liable for any failure to perform to the extent caused by the Customer's failure to do so.
+
+30.5 Any failure or delay by either party in exercising any right under this clause 30 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+
+
+--- PAGE 31 ---
+
+SECTION 31. INSURANCE
+
+31.7 Any notice required to be given under this clause 31 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+31.8 The obligations set out in this clause 31 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+31.6 The Customer shall provide such cooperation, information and access as the Supplier may reasonably require in order to perform its obligations under this clause 31, and the Supplier shall not be liable for any failure to perform to the extent caused by the Customer's failure to do so.
+
+31.11 Nothing in this clause 31 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+31.3 Where any obligation under this clause 31 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+31.5 Any failure or delay by either party in exercising any right under this clause 31 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+31.9 If any provision or part-provision of this clause 31 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+31.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 31 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+
+
+--- PAGE 32 ---
+
+SECTION 32. FORCE MAJEURE
+
+32.1 The parties acknowledge that the provisions of this clause 32 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+32.3 Where any obligation under this clause 32 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+32.2 Except as expressly provided in this clause 32, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+32.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 32, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+32.5 Any failure or delay by either party in exercising any right under this clause 32 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+32.8 The obligations set out in this clause 32 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+
+
+--- PAGE 33 ---
+
+SECTION 33. TERM
+
+33.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 33 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+33.8 The obligations set out in this clause 33 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+33.6 The Customer shall provide such cooperation, information and access as the Supplier may reasonably require in order to perform its obligations under this clause 33, and the Supplier shall not be liable for any failure to perform to the extent caused by the Customer's failure to do so.
+
+33.7 Any notice required to be given under this clause 33 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+33.9 If any provision or part-provision of this clause 33 is or becomes invalid, illegal or unenforceable, it shall be deemed modified to the minimum extent necessary to make it valid, legal and enforceable, and if such modification is not possible, the relevant provision shall be deemed deleted without affecting the validity of the remainder of this Agreement.
+
+33.1 The parties acknowledge that the provisions of this clause 33 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+33.2 Except as expressly provided in this clause 33, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+33.11 Nothing in this clause 33 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+
+
+--- PAGE 34 ---
+
+SECTION 34. GOVERNING LAW AND JURISDICTION
+
+34.1 This Agreement and any dispute or claim arising out of or in connection with it or its subject matter or formation (including non-contractual disputes or claims) shall be governed by and construed in accordance with the laws of the Republic of Vanuatu, without regard to its conflict of laws principles.
+
+34.2 The parties irrevocably agree that the courts of Port Vila, Republic of Vanuatu shall have exclusive jurisdiction to settle any dispute or claim arising out of or in connection with this Agreement or its subject matter or formation.
+
+34.3 The Customer irrevocably waives any objection to the venue of any proceeding in such courts on the grounds of forum non conveniens or any similar ground, and irrevocably waives any right to trial by jury and any right to participate in a class, collective or representative proceeding.
+
+34.4 Nothing in this clause 34 shall limit the Supplier's right to bring proceedings against the Customer in any other court of competent jurisdiction.
+
+SECTION 35. TERMINATION FOR CAUSE
+
+35.2 Except as expressly provided in this clause 35, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+35.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 35, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+35.3 Where any obligation under this clause 35 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+35.7 Any notice required to be given under this clause 35 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+35.6 The Customer shall provide such cooperation, information and access as the Supplier may reasonably require in order to perform its obligations under this clause 35, and the Supplier shall not be liable for any failure to perform to the extent caused by the Customer's failure to do so.
+
+35.1 The parties acknowledge that the provisions of this clause 35 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+
+
+--- PAGE 35 ---
+
+SECTION 36. TERMINATION FOR CONVENIENCE
+
+36.5 Any failure or delay by either party in exercising any right under this clause 36 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+36.2 Except as expressly provided in this clause 36, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+36.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 36 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+36.10 The parties shall each bear their own costs and expenses incurred in connection with the performance of their respective obligations under this clause 36, save where this Agreement expressly provides otherwise or where the parties agree otherwise in writing.
+
+36.8 The obligations set out in this clause 36 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+36.3 Where any obligation under this clause 36 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+
+
+--- PAGE 36 ---
+
+SECTION 37. EFFECT OF TERMINATION
+
+37.6 The Customer shall provide such cooperation, information and access as the Supplier may reasonably require in order to perform its obligations under this clause 37, and the Supplier shall not be liable for any failure to perform to the extent caused by the Customer's failure to do so.
+
+37.11 Nothing in this clause 37 shall be construed as creating a partnership, joint venture, agency or employment relationship between the parties, and neither party shall have authority to bind the other or to incur any obligation on the other's behalf.
+
+37.3 Where any obligation under this clause 37 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+37.8 The obligations set out in this clause 37 shall survive the expiry or termination of this Agreement for whatever reason and shall continue in full force and effect notwithstanding any such expiry or termination, save to the extent that the relevant obligation has by its nature been discharged.
+
+37.5 Any failure or delay by either party in exercising any right under this clause 37 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+37.1 The parties acknowledge that the provisions of this clause 37 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+37.7 Any notice required to be given under this clause 37 shall be in writing and shall be delivered by hand, sent by pre-paid recorded delivery, or transmitted by electronic mail to the address of the relevant party set out in Schedule 1, and shall be deemed received on the second Business Day following despatch.
+
+
+
+--- PAGE 37 ---
+
+SECTION 38. GENERAL PROVISIONS
+
+38.3 Where any obligation under this clause 38 falls due for performance on a day that is not a Business Day, that obligation shall instead fall due on the next following Business Day, and any applicable notice period shall be extended accordingly.
+
+38.1 The parties acknowledge that the provisions of this clause 38 are material to the commercial bargain recorded in this Agreement and have been negotiated at arm's length between parties of comparable bargaining power.
+
+38.5 Any failure or delay by either party in exercising any right under this clause 38 shall not constitute a waiver of that right, nor shall any single or partial exercise of any right preclude any further exercise of that right or of any other right under this Agreement.
+
+38.4 The Supplier shall maintain complete and accurate records relating to its performance of the obligations under this clause 38 for a period of not less than six (6) years following the date of expiry or termination of this Agreement, and shall make such records available to the Customer on reasonable written notice.
+
+38.2 Except as expressly provided in this clause 38, nothing in this Agreement shall operate to exclude, restrict or vary any right or remedy available to either party at law or in equity in respect of the subject matter of this clause.
+
+IN WITNESS WHEREOF the parties have executed this Agreement as of the Effective Date first written above.
+
