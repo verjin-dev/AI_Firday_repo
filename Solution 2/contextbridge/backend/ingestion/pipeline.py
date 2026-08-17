@@ -44,7 +44,10 @@ class IngestionPipeline:
         doc_type: str = "general",
         run_summarization: bool = True,
         doc_id: str | None = None,
+        original_name: str | None = None,
     ) -> IngestionResult:
+        """``original_name`` preserves the user's filename when the upload was
+        saved under a generated, path-safe name — it is what the UI displays."""
         path = Path(file_path)
         doc_id = doc_id or make_doc_id(path.name)
         warnings: list[str] = []
@@ -69,6 +72,8 @@ class IngestionPipeline:
                     warnings=[str(exc)],
                 )
             warnings.extend(parsed.warnings)
+            if original_name:
+                parsed.file_name = original_name
 
             total_tokens = token_counter.count(parsed.text)
 

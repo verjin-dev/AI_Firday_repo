@@ -120,13 +120,12 @@ async def upload(
             doc_type=doc_type,
             run_summarization=run_summarization,
             doc_id=doc_id,
+            original_name=file.filename,
         )
     except Exception as exc:
         logger.exception(f"Ingestion crashed for {file.filename}")
         raise HTTPException(status_code=500, detail=f"Ingestion failed: {exc}")
 
-    # Preserve the user-facing filename for display.
-    result.file_name = file.filename
     document_registry.put(result)
 
     if result.status == "failed":
