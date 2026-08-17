@@ -119,6 +119,34 @@ class VectorStore:
         return len(ids)
 
     # ------------------------------------------------------------------
+    def assert_dimension(self, dimension: int) -> None:
+        """Guard against querying a collection built with a different embedder.
+
+        Cosine similarity between vectors from two different models is
+        meaningless, and Chroma only rejects the *write* — a mismatched *query*
+        can return silently wrong neighbours. Fail loudly instead.
+        """
+        stored = self._stored_dimension()
+        if stored and stored != dimension:
+            raise VectorStoreError(
+                f"Embedding dimension mismatch: collection "
+                f"'{self.collection_name}' holds {stored}d vectors but the active "
+                f"embedding backend produces {dimension}d. Restore the previous "
+                f"embedding configuration, or delete {self.persist_dir} and "
+                "re-ingest."
+            )
+
+    def _stored_dimension(self) -> int | None:
+        """Vector width already in the collection, or None when it is empty."""
+        try:
+            sample = self._collection.peek(limit=1)  # type: ignore[union-attr]
+        except Exception:
+            return None
+        embeddings = sample.get("embeddings")
+        if embeddings is None or len(embeddings) == 0:
+            return None
+        return len(embeddings[0])
+
     def search(
         self,
         query_embedding: list[float],
@@ -127,6 +155,7 @@ class VectorStore:
         threshold: float = config.SIMILARITY_THRESHOLD,
     ) -> list[SearchResult]:
         """Cosine search, optionally scoped to one document."""
+        self.assert_dimension(len(query_embedding))
         where = {"doc_id": doc_id} if doc_id else None
 
         def _query():

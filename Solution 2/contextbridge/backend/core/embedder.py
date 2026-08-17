@@ -16,9 +16,13 @@ from __future__ import annotations
 
 import hashlib
 import math
+import time
 
 from backend import config
 from backend.utils.logger import logger
+
+_PROBE_ATTEMPTS = 3
+_PROBE_BACKOFF = 1.5
 
 
 class EmbeddingError(RuntimeError):
@@ -45,19 +49,35 @@ class EmbeddingEngine:
     # ------------------------------------------------------------------
     def _load(self) -> None:
         if config.EMBEDDING_BASE_URL:
-            try:
-                probe = self._remote_embed(["dimension probe"])
-                self.dimension = len(probe[0])
-                self.backend = "remote"
-                logger.info(
-                    f"Embeddings: remote {config.EMBEDDING_REMOTE_MODEL} "
-                    f"({self.dimension}d) via {config.EMBEDDING_BASE_URL}"
-                )
-                return
-            except Exception as exc:
-                logger.warning(
-                    f"Remote embeddings unavailable ({exc}); falling back to local"
-                )
+            # Retry the probe: a transient 503 must not silently downgrade us to a
+            # different-dimension backend, which would corrupt an existing index.
+            last_error: Exception | None = None
+            for attempt in range(1, _PROBE_ATTEMPTS + 1):
+                try:
+                    probe = self._remote_embed(["dimension probe"])
+                    self.dimension = len(probe[0])
+                    self.backend = "remote"
+                    logger.info(
+                        f"Embeddings: remote {config.EMBEDDING_REMOTE_MODEL} "
+                        f"({self.dimension}d) via {config.EMBEDDING_BASE_URL}"
+                    )
+                    return
+                except Exception as exc:
+                    last_error = exc
+                    if attempt < _PROBE_ATTEMPTS:
+                        logger.warning(
+                            f"Remote embeddings probe failed "
+                            f"(attempt {attempt}/{_PROBE_ATTEMPTS}): {exc}"
+                        )
+                        time.sleep(_PROBE_BACKOFF * attempt)
+
+            logger.error(
+                f"Remote embeddings unreachable after {_PROBE_ATTEMPTS} attempts "
+                f"({last_error}). Falling back to a LOCAL backend with a DIFFERENT "
+                "vector dimension. Any collection already built with remote "
+                "embeddings will reject writes until you delete data/chroma_db "
+                "and re-ingest."
+            )
 
         try:
             from sentence_transformers import SentenceTransformer

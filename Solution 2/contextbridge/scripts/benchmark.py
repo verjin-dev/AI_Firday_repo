@@ -154,7 +154,14 @@ async def main(quick: bool) -> int:
         f"({results.document['overflow_factor']}x the baseline window)"
     )
 
-    questions = QUESTIONS[:4] if quick else QUESTIONS
+    if quick:
+        # Keep a mix — a quick run made only of early-document questions would
+        # report 0% deep retention for both systems and mean nothing.
+        early_q = [q for q in QUESTIONS if not q["deep"]][:2]
+        deep_q = [q for q in QUESTIONS if q["deep"]][:2]
+        questions = early_q + deep_q
+    else:
+        questions = QUESTIONS
 
     # ---------------- Test 1 ----------------
     print(f"\n{RULE}\n  TEST 1 — Q&A accuracy ({len(questions)} questions)\n{RULE}")
@@ -192,24 +199,30 @@ async def main(quick: bool) -> int:
 
     deep = [o for o in outcomes if o.deep]
     early = [o for o in outcomes if not o.deep]
+
+    def rate(hits: int, total: int) -> float | None:
+        """None rather than 0.0 when the subset is empty — 0% would be a lie."""
+        return round(hits / total, 3) if total else None
     results.test1 = {
         "questions": len(outcomes),
         "baseline_correct": sum(o.baseline_correct for o in outcomes),
         "contextbridge_correct": sum(o.contextbridge_correct for o in outcomes),
-        "baseline_accuracy": round(
-            sum(o.baseline_correct for o in outcomes) / max(1, len(outcomes)), 3
+        "deep_questions": len(deep),
+        "baseline_accuracy": rate(
+            sum(o.baseline_correct for o in outcomes), len(outcomes)
         ),
-        "contextbridge_accuracy": round(
-            sum(o.contextbridge_correct for o in outcomes) / max(1, len(outcomes)), 3
+        "contextbridge_accuracy": rate(
+            sum(o.contextbridge_correct for o in outcomes), len(outcomes)
         ),
-        "deep_baseline_retention": round(
-            sum(o.baseline_correct for o in deep) / max(1, len(deep)), 3
+        "deep_baseline_retention": rate(sum(o.baseline_correct for o in deep), len(deep)),
+        "deep_contextbridge_retention": rate(
+            sum(o.contextbridge_correct for o in deep), len(deep)
         ),
-        "deep_contextbridge_retention": round(
-            sum(o.contextbridge_correct for o in deep) / max(1, len(deep)), 3
+        "early_baseline_accuracy": rate(
+            sum(o.baseline_correct for o in early), len(early)
         ),
-        "early_baseline_accuracy": round(
-            sum(o.baseline_correct for o in early) / max(1, len(early)), 3
+        "early_contextbridge_accuracy": rate(
+            sum(o.contextbridge_correct for o in early), len(early)
         ),
         "details": [asdict(o) for o in outcomes],
     }
@@ -283,31 +296,61 @@ async def main(quick: bool) -> int:
         FRAUD_Q, system=fraud_payload.system_prompt, max_tokens=900
     )
 
+    # A single vague query ("any anomalies?") is weak for any retriever. The
+    # product path for this task is the domain extractor, which fans the question
+    # out into targeted probe queries. Report both, so the comparison is honest
+    # about where the win actually comes from.
+    from backend.domain.banking_extractor import BankingExtractor
+
+    extractor = BankingExtractor(retriever=retriever)
+    analysis = await extractor.extract_fraud_indicators(
+        ingestion.doc_id, ingestion.summary
+    )
+    evidence = " ".join(
+        f"{i.type} {i.evidence} {i.explanation}" for i in analysis.indicators
+    )
+
     baseline_found = hit(baseline_fraud.text, ["CLM-2024-778341", "Northgate"])
-    bridge_found = hit(bridge_fraud.text, ["CLM-2024-778341", "Northgate"])
+    bridge_chat_found = hit(bridge_fraud.text, ["CLM-2024-778341", "Northgate"])
+    bridge_extractor_found = hit(evidence, ["CLM-2024-778341", "Northgate", "prior claim"])
+
     results.test3 = {
         "baseline_found_indicator": baseline_found,
-        "contextbridge_found_indicator": bridge_found,
+        "contextbridge_chat_found_indicator": bridge_chat_found,
+        "contextbridge_extractor_found_indicator": bridge_extractor_found,
+        "extractor_indicator_count": len(analysis.indicators),
+        "extractor_likelihood": analysis.fraud_likelihood,
         "baseline_answer": baseline_fraud.text.strip()[:500],
         "contextbridge_answer": bridge_fraud.text.strip()[:500],
         "cited_chunk": next(
             (h.chunk_id for h in fraud_hits if "CLM-2024-778341" in h.chunk.text), None
         ),
     }
-    print(f"  baseline found the planted indicator      : {baseline_found}")
-    print(f"  contextbridge found the planted indicator : {bridge_found}")
+    bridge_found = bridge_chat_found or bridge_extractor_found
+    print(f"  baseline (truncated context)          : {baseline_found}")
+    print(f"  contextbridge — single chat query     : {bridge_chat_found}")
+    print(
+        f"  contextbridge — fraud extractor       : {bridge_extractor_found} "
+        f"({len(analysis.indicators)} indicators, likelihood "
+        f"{analysis.fraud_likelihood})"
+    )
 
     # ---------------- summary ----------------
     print(f"\n{RULE}\n  RESULTS\n{RULE}")
+
+    def pct(value: float | None) -> str:
+        return "n/a" if value is None else f"{value:.0%}"
+
     rows = [
         ("Overall Q&A accuracy",
-         f"{results.test1['baseline_accuracy']:.0%}",
-         f"{results.test1['contextbridge_accuracy']:.0%}"),
+         pct(results.test1["baseline_accuracy"]),
+         pct(results.test1["contextbridge_accuracy"])),
         ("Accuracy on early-document facts",
-         f"{results.test1['early_baseline_accuracy']:.0%}", "100%"),
-        ("Critical info retention (deep facts)",
-         f"{results.test1['deep_baseline_retention']:.0%}",
-         f"{results.test1['deep_contextbridge_retention']:.0%}"),
+         pct(results.test1["early_baseline_accuracy"]),
+         pct(results.test1["early_contextbridge_accuracy"])),
+        (f"Retention, deep facts (n={len(deep)})",
+         pct(results.test1["deep_baseline_retention"]),
+         pct(results.test1["deep_contextbridge_retention"])),
         ("Fact retained after N turns",
          str(results.test2["baseline_lost_fact_at_turn"] or "retained"),
          "retained" if results.test2["contextbridge_retained"] else
