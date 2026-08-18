@@ -1,0 +1,46 @@
+{
+  "days": 30,
+  "sessions": 36862,
+  "monthly_budget_inr": 582000.0,
+  "incident_detection": {
+    "burn_alert_after_min": 5,
+    "budget_inr": 582000.0,
+    "hourly_budget_inr": 808.3333333333334
+  },
+  "baseline_notes": {
+    "loop_calls": 36330,
+    "loop_cost_inr": 270240.705,
+    "loop_minutes": 346
+  },
+  "tokenops_notes": {
+    "loop_detector_min": 1,
+    "loop_kill_min": 2,
+    "loop_calls": 210,
+    "loop_cost_inr": 1562.085,
+    "loop_minutes": 2,
+    "loop_detected_after_min": 2,
+    "cache": {
+      "lookups": 55424,
+      "hits": 11480,
+      "hit_rate": 0.20713048498845266,
+      "quality_blocked": 55,
+      "expired": 43870,
+      "uncacheable": 74634,
+      "saved_inr": 10177.33714812001,
+      "cache_read_cost_inr": 1196.2999414800036,
+      "net_saved_inr": 8981.037206640007
+    },
+    "convergence_day": {
+      "classification": 12,
+      "retrieval": 11,
+      "generation": 0,
+      "verification": 1
+    },
+    "policy": {
+      "classification": "haiku|full|deep|standard",
+      "retrieval": "haiku|terse|shallow|aggressive",
+      "generation": "sonnet|terse|shallow|aggressive",
+      "verification": "haiku|terse|shallow|aggressive"
+    }
+  }
+}
