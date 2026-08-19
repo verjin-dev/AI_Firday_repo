@@ -5,7 +5,7 @@ from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
-from backend.api.routes import burn, economics, health, router_api
+from backend.api.routes import burn, economics, health, live, router_api
 from backend.config import get_settings
 from backend.storage.db import get_engine, table_counts
 from backend.utils.errors import AppError
@@ -30,6 +30,7 @@ app.include_router(health.router, prefix="/api")
 app.include_router(economics.router, prefix="/api")
 app.include_router(router_api.router, prefix="/api")
 app.include_router(burn.router, prefix="/api")
+app.include_router(live.router, prefix="/api")
 
 
 @app.exception_handler(AppError)

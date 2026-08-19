@@ -1,4 +1,4 @@
-.PHONY: install api ui sim benchmark demo test all clean
+.PHONY: install api ui sim benchmark demo live test all clean
 
 install:
 	pip install -r requirements.txt
@@ -17,6 +17,9 @@ benchmark:
 
 demo:
 	python scripts/demo_flow.py --offline
+
+live:
+	python scripts/live_demo.py --seconds 90
 
 test:
 	python -m pytest tests/ -q

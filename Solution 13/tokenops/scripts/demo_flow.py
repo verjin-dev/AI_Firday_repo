@@ -179,6 +179,10 @@ def main() -> None:
         say("be a loop.")
     say("")
     say("Everything else in this project is optimisation. This is insurance.")
+    say("")
+    say("--> Presenting live? Open the Live ops page and press the agent-loop button")
+    say("    instead of quoting this. The detector, the circuit breaker and the rupee")
+    say("    figure are all produced in front of the audience.")
 
     # ---------------------------------------------------------------- beat 6
     beat(6, "Graceful degradation", "30s")

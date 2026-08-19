@@ -164,6 +164,50 @@ class BurnRateMonitor:
                 return t
         return None
 
+    def live_state(self, minute_costs: Sequence[float],
+                   short_window_fraction: float = 1 / 12.0) -> Dict[str, Any]:
+        """Evaluate every window against the *latest* minute, for a live gauge.
+
+        Same rule as `first_breach_minute`, evaluated at one point in time
+        instead of scanned: both the short and the long window must be over
+        threshold, and the short window must be full before it may fire.
+        """
+        costs = np.asarray(list(minute_costs), dtype=float)
+        budget_per_min = self.budget.hourly_inr / 60.0
+        out: List[Dict[str, Any]] = []
+        worst = 0.0
+        for window_hours, multiplier in self.windows:
+            long_min = int(window_hours * 60)
+            short_min = max(1, int(long_min * short_window_fraction))
+            long_slice = costs[-long_min:] if len(costs) else costs
+            short_slice = costs[-short_min:] if len(costs) else costs
+            long_rate = float(long_slice.mean()) if len(long_slice) else 0.0
+            short_rate = float(short_slice.mean()) if len(short_slice) else 0.0
+            observed = (short_rate / budget_per_min) if budget_per_min else 0.0
+            elapsed_frac = min(1.0, len(long_slice) / long_min) if long_min else 1.0
+            breaching = (
+                len(costs) >= short_min
+                and budget_per_min > 0
+                and short_rate >= multiplier * budget_per_min
+                and long_rate >= multiplier * budget_per_min * elapsed_frac
+            )
+            worst = max(worst, observed)
+            out.append({
+                "window_hours": window_hours,
+                "short_window_minutes": short_min,
+                "threshold_multiplier": multiplier,
+                "observed_multiplier": round(observed, 2),
+                "short_rate_inr_per_min": short_rate,
+                "long_rate_inr_per_min": long_rate,
+                "breaching": bool(breaching),
+            })
+        return {
+            "windows": out,
+            "worst_multiplier": round(worst, 2),
+            "budget_inr_per_min": budget_per_min,
+            "any_breaching": any(w["breaching"] for w in out),
+        }
+
     def time_to_exhaustion_hours(self, hourly: pd.DataFrame, lookback_hours: int = 24) -> Optional[float]:
         """At the current burn rate, how long until the monthly budget is gone."""
         if hourly.empty:

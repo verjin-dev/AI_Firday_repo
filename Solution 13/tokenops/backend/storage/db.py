@@ -28,7 +28,12 @@ def get_engine():
     global _engine, _SessionLocal
     if _engine is None:
         s = get_settings()
-        _engine = create_engine(_resolve_url(s.SQLITE_URL), future=True)
+        # the live engine writes from a background thread, so SQLite must
+        # not enforce same-thread access
+        _engine = create_engine(
+            _resolve_url(s.SQLITE_URL), future=True,
+            connect_args={"check_same_thread": False, "timeout": 30},
+        )
         _SessionLocal = sessionmaker(bind=_engine, expire_on_commit=False, future=True)
         Base.metadata.create_all(_engine)
     return _engine

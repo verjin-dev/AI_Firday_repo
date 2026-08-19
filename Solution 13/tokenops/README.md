@@ -56,7 +56,7 @@ python scripts/benchmark.py             # writes benchmark_results.json + chart
 streamlit run frontend/app.py           # the judge-facing UI
 ```
 
-Optional: `uvicorn backend.main:app --port 8013` for the REST API (`/docs`), and `python scripts/demo_flow.py --offline` for the scripted narration.
+Optional: `uvicorn backend.main:app --port 8013` for the REST API (`/docs`), `python scripts/demo_flow.py --offline` for the scripted narration of the 30-day run, and `python scripts/live_demo.py` for the live scenario in a terminal (see §5).
 
 **No API key is required.** TokenOps meters LLM spend; it does not generate it. The whole system runs offline on locally generated telemetry, which is also why the demo cannot fail on conference Wi-Fi.
 
@@ -72,7 +72,38 @@ Optional: `uvicorn backend.main:app --port 8013` for the REST API (`/docs`), and
 | 6 | **Burn → degradation slider** | Set a tenant to 20% budget: context halved, verification skipped, cheap route forced. The workflow completes. |
 | 7 | **Forecast** | ₹8.64 L next month ± interval, MAPE 4.5%, decomposed: 9% of growth is volume, 82% is unit cost — *that* is a regression with an owner. |
 
-## 5. Headline metrics
+## 5. Live scenario (the one to put on the projector)
+
+The walkthrough above is a 30-day replay. **Live ops** is not: open it, press **Start**, and traffic begins arriving on a wall clock, with the *same* `LearningRouter`, `SemanticCache`, `PromptCompressor`, `CostGuardrails` and `BurnRateMonitor` objects the benchmark used driving every decision. The bandit is genuinely learning while the audience watches, and the circuit breaker genuinely trips.
+
+```bash
+streamlit run frontend/app.py      # then open "Live ops" in the page list
+python scripts/live_demo.py        # or the same scenario in a terminal, 90s
+```
+
+Time is compressed — one simulated minute per real second by default (60×), adjustable in the sidebar. At true production volume a real clock shows one session every 72 seconds, which is not a demo.
+
+**What is live, not replayed:** session arrivals (Poisson), route selection per step, cache hits and misses, cascade escalations, quality-floor exclusions, budget state, burn-rate windows, loop detection, and circuit breakers.
+
+### The five beats
+
+| Beat | What you do | What happens, live |
+|---|---|---|
+| 1 | Press **Start**, wait ~30s | Two curves separate: TokenOps against an unmanaged shadow priced on identical traffic. The **Saved so far** counter starts *negative* — exploration is charged before it pays — and crosses over within a minute or two. That crossover is the exploration-budget argument, made visibly. |
+| 2 | Watch the routing table | Early decisions are tagged `exploring`. As evidence accumulates the router settles, and any route that cannot hold the quality floor is removed — a `QUALITY FLOOR` line appears in the event feed naming the route and the reason. |
+| 3 | Press **💥 agent loop** | The loop detector matches four identical `(step, prompt_hash)` calls in one session, kills it, and opens the circuit breaker on that tenant — typically inside one simulated minute, for tens of rupees. Compare to the ₹2.70 L the same loop costs unmanaged in the 30-day run. |
+| 4 | Press **💥 prompt bloat** | Context per call triples. Nothing errors, nothing is flagged by signature — the spend curve just steps up and the burn windows climb. This is the incident *without* a signature, which is exactly what burn-rate alerting exists for. |
+| 5 | Drag **monthly budget** down | Guardrail decisions move ALLOW → DEGRADE: cheap route forced, context halved, verification skipped. Sessions keep completing at lower quality and much lower cost. Push it further and it BLOCKs. The workflow degrades; it does not stop. |
+
+### An honest detail worth saying out loud
+
+At a realistic budget the **loop detector always beats burn-rate alerting for a loop** — a signature match needs four calls, a rate needs a trailing window. That ordering is the design, not luck, and there is a test for it (`test_loop_detector_beats_burn_rate_for_a_loop`). There is also a test that blinds the signature detector and asserts the burn monitor still catches the same incident (`test_burn_rate_catches_the_loop_when_the_signature_detector_is_blind`) — because the next incident will not be a loop.
+
+The live cache hit rate reads much higher than the benchmark's 20.7%: a short live run sits inside one 24-hour TTL window, so almost nothing has expired yet. The page labels it as such rather than quietly banking the flattering number.
+
+Everything is also available over the API — `POST /api/live/start`, `POST /api/live/inject {"kind": "agent_loop"}`, `GET /api/live/state` — so the same scenario can be driven from a script or a second screen.
+
+## 6. Headline metrics
 
 Measured, not asserted: every figure is computed by `scripts/benchmark.py` from the ledger. Headline unit economics **exclude the planted agent-loop incident in both arms** — folding a one-off outage into the headline would flatter TokenOps by ~40 points and tell you nothing about a normal Tuesday. The incident is reported on its own line.
 
@@ -99,7 +130,7 @@ Measured, not asserted: every figure is computed by `scripts/benchmark.py` from 
 
 Mean outcome quality falls 0.892 → 0.874. That is the designed trade: the router's reward is `quality − λ·cost` with λ = 0.4, and it will accept a small quality loss for a large cost one. λ is a dial, not a mystery — turn it down and you buy quality back at a known price. The hard quality floor (0.80) is what stops the trade going too far, and it is enforced by *excluding arms before sampling*, not by hoping.
 
-## 6. Key technical decisions
+## 7. Key technical decisions
 
 **Failed outcomes count in the numerator, never the denominator.** `cost_per_outcome = Σ all spend / count(successful outcomes)`. If you divide by attempts, a system that fails cheaply looks efficient. This one decision changes what the optimiser optimises.
 
@@ -117,7 +148,7 @@ Mean outcome quality falls 0.892 → 0.874. That is the designed trade: the rout
 
 **Structural breaks are found, not averaged away.** The forecaster detects the day-23 prompt deploy as a level shift and reports accuracy on the current regime, because no forecaster can see a deploy coming and pretending otherwise produces a MAPE that means nothing.
 
-## 7. Scope — what this does *not* solve
+## 8. Scope — what this does *not* solve
 
 Stated deliberately; these are non-goals, not gaps we ran out of time for.
 
@@ -129,7 +160,7 @@ Stated deliberately; these are non-goals, not gaps we ran out of time for.
 - **The semantic cache uses a hashed bag-of-words embedding offline** so the demo needs no model download. The interface is pluggable; production would use sentence-transformers or the provider's embeddings.
 - **The workload is simulated**, with parameters chosen to be defensible rather than flattering. Every number in §5 is computed from that simulation, and the simulator is in the repo for inspection.
 
-## 8. Risk assessment
+## 9. Risk assessment
 
 | Assumption | If it is wrong | Failure mode | Mitigation in the build |
 |---|---|---|---|
@@ -140,11 +171,11 @@ Stated deliberately; these are non-goals, not gaps we ran out of time for.
 | Loop signatures are detectable | Non-identical loops slip through | A slow-burn incident runs longer | Burn-rate alerting is the independent safety net; the demo reports both detection paths |
 | Budgets are set sensibly | Alerts are noise or silence | Alert fatigue, or no alerts at all | Budget derived from prior-period baseline spend + 10% headroom, excluding incident days |
 
-## 9. Scalability
+## 10. Scalability
 
 The ledger is append-only and columnar-friendly: every analytic here is a time-series aggregation with no joins on the hot path, which is a solved problem at any volume (partition by day, roll up hourly). The router's entire state is a few hundred Beta distributions — a few kilobytes, and updates are arithmetic. The cache is one vector lookup per call. Metering is a database write. Nothing in TokenOps becomes hard at 10M calls a day; the bandit becomes *better*, because it converges faster with more data. Measured overhead is 1.26% of managed spend, and the only model call it makes is the 15% quality-judge sample.
 
-## 10. Research grounding
+## 11. Research grounding
 
 - **FinOps Foundation Framework** — showback/chargeback, unit economics, and the Inform → Optimise → Operate lifecycle this project is organised around.
 - **Google SRE Workbook, "Alerting on SLOs"** — multiwindow, multi-burn-rate alerting; the 14.4×/6×/3× thresholds and the short-window pairing are taken directly and applied to a cost budget instead of an error budget.
@@ -154,7 +185,7 @@ The ledger is append-only and columnar-friendly: every analytic here is a time-s
 - **Thompson, W.R. (1933)**, and Chapelle & Li (2011) on the empirical evaluation of Thompson sampling — the router's algorithm and its regret properties.
 - **Holt (1957) / Winters (1960)** triple exponential smoothing — the forecaster, implemented directly so the project carries no heavyweight statistical dependency.
 
-## 11. Roadmap to production (90 days)
+## 12. Roadmap to production (90 days)
 
 **Phase 1, days 1–30 — Instrument.**  Ship the tracing middleware as an SDK wrapper (Python + TypeScript) around the Anthropic client, so tagging is one decorator. Replace SQLite with the customer's warehouse (ClickHouse or BigQuery) behind the existing `query_df` seam. Backfill 90 days from provider invoices for a baseline. *Dependencies:* warehouse access, one platform engineer. *Exit gate:* cost per outcome computed on live traffic for one workflow.
 
@@ -164,7 +195,7 @@ The ledger is append-only and columnar-friendly: every analytic here is a time-s
 
 **Named risks to the plan:** a customer without any quality signal cannot run the router (Phase 3 becomes cache + compression only, roughly a third of the benefit); a provider price change mid-programme invalidates the backfilled baseline and requires a re-basing; and warehouse latency above a minute weakens burn-rate detection, which is why the alerting path reads from the write-side ledger rather than the warehouse.
 
-## 12. Repository map
+## 13. Repository map
 
 ```
 backend/
@@ -176,14 +207,18 @@ backend/
     burn_rate.py             multi-window burn alerting, minute-level detection
     guardrails.py            ALLOW/DEGRADE/QUEUE/BLOCK, loop detection, breakers
     forecaster.py            Holt-Winters, driver decomposition, what-if
+    live.py                  the real-time engine behind the Live Ops page
     optimizers/              semantic cache · compressor · cascade · scheduler
-  api/routes/                health · economics · router · burn/forecast
-frontend/                    Streamlit: 6 pages, baseline toggle, evidence panels
+  api/routes/                health · economics · router · burn/forecast · live
+  domain/workload.py         the simulated estate, shared by batch and live
+frontend/                    Streamlit: 7 pages incl. Live ops, baseline toggle
 scripts/
   simulate_workload.py       30 days, both arms, 3 planted incidents
   benchmark.py               the table above + benchmark_chart.png
   demo_flow.py               the scripted 4-minute narration
-tests/                       38 tests over pricing, router, burn, guardrails, …
+  live_demo.py               the live scenario in a terminal, incidents scheduled
+tests/                       68 tests: pricing, router, burn, guardrails, the live
+                             engine, and every Streamlit page rendering
 ```
 
 Run the tests with `python -m pytest -q`.

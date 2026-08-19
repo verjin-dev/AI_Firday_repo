@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-18T19:10:06.000646+00:00",
+  "generated_at": "2026-08-19T02:40:19.277235+00:00",
   "outcome_type": "ticket_resolved",
   "convention": "headline metrics exclude the planted agent-loop incident in both arms",
   "arms": {

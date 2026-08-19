@@ -29,6 +29,7 @@ PAGES = [
     "frontend/pages/04_router.py",
     "frontend/pages/05_burn.py",
     "frontend/pages/06_forecast.py",
+    "frontend/pages/07_live.py",
 ]
 
 pytestmark = pytest.mark.skipif(

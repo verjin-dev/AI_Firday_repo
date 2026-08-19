@@ -78,6 +78,8 @@ with left:
 - **Guardrails** that degrade a workflow rather than stopping it when budget runs low.
 - **A forecaster** that separates volume growth from unit-cost growth, because those
   two need opposite responses.
+- **A live engine** driving all of the above on a wall clock, so the incident story
+  can be demonstrated rather than replayed.
         """
     )
 with right:
@@ -90,6 +92,7 @@ with right:
 4. **Router** - watch the bandit learn, and read why it chose
 5. **Burn & incidents** - the day-18 agent loop
 6. **Forecast** - next month, decomposed, with what-if sliders
+7. **Live ops** - traffic arriving now; inject an incident and watch it contained
         """
     )
     if n.get("monthly_budget_inr"):
